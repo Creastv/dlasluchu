@@ -1,0 +1,144 @@
+/*===========================================================
+ Wobble button
+============================================================*/
+
+@-webkit-keyframes hvr-wobble {
+  16.65% {
+    -webkit-transform: translateX(0.375rem);
+    transform: translateX(0.375rem);
+  }
+  33.3% {
+    -webkit-transform: translateX(-0.3125rem);
+    transform: translateX(-0.3125rem);
+  }
+  49.95% {
+    -webkit-transform: translateX(0.25rem);
+    transform: translateX(0.25rem);
+  }
+  66.6% {
+    -webkit-transform: translateX(-0.125rem);
+    transform: translateX(-0.125rem);
+  }
+  83.25% {
+    -webkit-transform: translateX(0.0625rem);
+    transform: translateX(0.0625rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-wobble {
+  16.65% {
+    -webkit-transform: translateX(0.375rem);
+    transform: translateX(0.375rem);
+  }
+  33.3% {
+    -webkit-transform: translateX(-0.3125rem);
+    transform: translateX(-0.3125rem);
+  }
+  49.95% {
+    -webkit-transform: translateX(0.25rem);
+    transform: translateX(0.25rem);
+  }
+  66.6% {
+    -webkit-transform: translateX(-0.125rem);
+    transform: translateX(-0.125rem);
+  }
+  83.25% {
+    -webkit-transform: translateX(0.0625rem);
+    transform: translateX(0.0625rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.hvr-wobble {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(0.0625rem) translateZ(0);
+  transform: perspective(0.0625rem) translateZ(0);
+  -webkit-box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-wobble .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.hvr-wobble:hover img,
+.hvr-wobble:focus img,
+.hvr-wobble:active img {
+  -webkit-animation-name: hvr-wobble;
+  animation-name: hvr-wobble;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/*===========================================================
+Common Classes
+===========================================================*/
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: normal;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 6.25rem;
+  -webkit-box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+  background-color: var(--blue);
+  text-align: center;
+  gap: 1.25rem;
+  padding-left: 2.375rem;
+  padding-right: 2.1875rem;
+  min-width: 0;
+}
+.btn.btn-border {
+  color: var(--blue);
+  -webkit-box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+  border: solid 0.0625rem var(--blue);
+  background-color: var(--white);
+  line-height: normal;
+  padding: 0 2rem;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  border: solid 0.0625rem var(--blue);
+}
+.btn:hover {
+  color: #ddd;
+}
+.btn img {
+  max-width: 3rem;
+}
+.btn-md {
+  width: 21.5625rem;
+  max-width: 100%;
+}
+.btn-sm {
+  width: 18.75rem;
+  max-width: 100%;
+}
+.navbar .btn:hover {
+  color: var(--blue);
+}

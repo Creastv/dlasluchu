@@ -1,0 +1,104 @@
+/*===========================================================
+Parsley
+===========================================================*/
+.parsley-errors-list {
+  //   margin-left: 20px;
+  color: var(--warning);
+  padding: 0;
+  li {
+    list-style: none;
+    font-size: 14px;
+    line-height: normal;
+    padding: 10px 10px 0 10px;
+  }
+}
+// .parsley-error,
+.parsley-error:not(.form-check) {
+  border: 1px solid var(--warning) !important;
+}
+.parsley-success:not(.form-check) {
+  border: 1px solid green !important;
+}
+/*===========================================================
+Contact Area
+============================================================*/
+
+.contact-area {
+  padding-top: 5.625rem;
+  padding-bottom: 3.125rem;
+}
+.contact {
+  max-width: 63.75rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-title {
+  text-align: center;
+  max-width: 56.25rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+/* .contact-title:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      background-image: url(../img/form-dots.png);
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+  } */
+.contact-title {
+  background-image: url(../img/form-dots.png);
+  background-position: center bottom;
+}
+.contact-title h2 {
+  font-size: 2.375rem;
+  font-weight: 900;
+  line-height: 1.4;
+  color: var(--black);
+}
+.contact-title p {
+  color: var(--blue);
+  font-size: 1.3125rem;
+  font-weight: 900;
+}
+.contact-form {
+  padding: 3.5rem 3.9375rem 2.4375rem 3.875rem;
+  background-color: #f8f8f8;
+}
+.single-form {
+  margin-bottom: 0.75rem;
+}
+.single-form input {
+  width: 100%;
+  height: 3rem;
+  border: 0;
+  border-radius: 0.5rem;
+  border: solid 0.0625rem #767373;
+  background-color: var(--white);
+  padding: 0 0.9375rem;
+}
+.form-check {
+  margin-left: 0.9375rem;
+  margin-top: 0.625rem;
+}
+.form-check label {
+  font-size: 1rem !important;
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--black);
+  padding-left: 0.3125rem;
+  cursor: pointer;
+}
+.form-check-input {
+  margin-top: 0.375rem;
+}
+.contact-bttn {
+  margin-top: 1.875rem;
+}

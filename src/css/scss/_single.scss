@@ -1,0 +1,116 @@
+.meta {
+  margin-bottom: 20px;
+}
+.entry-date {
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: var(--black);
+}
+body.single {
+  .entry-header {
+    // position: relative;
+    width: 100%;
+
+    margin: 0 auto;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 50%;
+      top: 0;
+      left: 0;
+      background-color: #f3f3f3;
+      @media #{$sm} {
+        height: 75%;
+      }
+    }
+    @media #{$sm} {
+      padding: 130px 15px 30px;
+    }
+    h1 {
+      color: var(--black) !important;
+      font-size: 2.4em;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @media #{$sm} {
+        font-size: 1.75em;
+      }
+    }
+    .rank-math-breadcrumb {
+      // padding: 0 20px;
+
+      p {
+        text-align: center !important;
+        justify-content: center !important;
+      }
+      a {
+        color: var(--main2);
+      }
+      span {
+        color: var(--black) !important;
+      }
+    }
+    .meta-pub {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      font-size: 0.8em;
+      margin: 0;
+      span {
+        color: var(--black);
+      }
+    }
+    img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 16px;
+    }
+  }
+
+  .entry-term {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    span,
+    a {
+      display: inline-block;
+      font-size: 12px;
+      color: var(--blue);
+      background-color: var(--gray);
+      border: 1px solid var(--blue);
+      padding: 4px 10px;
+      &:hover {
+        color: var(--white);
+        background-color: var(--blue);
+      }
+    }
+  }
+
+  .entry-content {
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    // text-align: justify;
+    margin-bottom: 50px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    a {
+      color: var(--main);
+    }
+  }
+}

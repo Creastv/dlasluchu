@@ -1,0 +1,29 @@
+// Query
+$xx: "only screen and (max-width: 350px)";
+$xs: "only screen and (max-width: 460px)";
+$sm: "only screen and (max-width: 768px)";
+$md: "only screen and (max-width: 998px)";
+$slg: "only screen and (max-width: 1200px)";
+$lg: "only screen and (max-width: 1300px)";
+$xlg: "only screen and (max-width: 1400px)";
+$xxlg: "only screen and (max-width: 1500px)";
+
+:root {
+  /* Font/text values */
+  --font-inter: "Inter", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --black2: #27251f;
+  --gray: #f3f3f3;
+  --blue: #005da9;
+  --warning: #a93400;
+  /* Hamber menu icon style */
+  --hamWidth: 2.5rem;
+  --hamHeight: 0.25rem;
+  --hamMargin: 0.375rem;
+  /* summation of --hamMargin adn --hamHeight */
+  --hamTranslate: 0.625rem;
+  /* summation of --hamMargin adn --hamHeight */
+  --hamTranslate3: -0.625rem;
+  --hamBg: #1d1d1b;
+}

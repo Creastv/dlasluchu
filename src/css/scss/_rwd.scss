@@ -1,0 +1,464 @@
+/*===========================================================
+Responsive
+============================================================*/
+@media (min-width: 1650px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 1649px) {
+  html {
+    font-size: 90%;
+  }
+  .dlaczego-text p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 1399px) {
+  html {
+    font-size: 100%;
+  }
+  .navbar-brand img {
+    max-width: 170px;
+  }
+  .navbar.active .navbar-brand img {
+    max-width: 150px;
+  }
+  .navbar a {
+    font-size: 14px;
+  }
+  .navbar-nav {
+    gap: 5px;
+  }
+  .banner-area {
+    margin-top: 85px;
+  }
+  .dlaczego-left {
+    max-width: 522px;
+  }
+  .dlaczego-right {
+    max-width: calc(100% - 570px);
+  }
+  .dlaczego-left:before {
+    width: 522px;
+    height: 615px;
+    left: 0;
+  }
+  .dlaczego-list {
+    margin-top: 30px;
+  }
+  .dlaczego-card {
+    width: calc(50% - 7px);
+    padding: 15px;
+    margin-bottom: 14px;
+  }
+  .nowoczesne-left {
+    max-width: 55%;
+    padding-right: 70px;
+  }
+  .nowoczesne-right {
+    max-width: 45%;
+  }
+  .nowoczesne-apparts {
+    left: -70px;
+    max-width: 240px;
+  }
+  .footer-left img {
+    max-width: 250px;
+  }
+  .dots-1,
+  .dots-2 {
+    width: 400px;
+  }
+
+  .aparat {
+    gap: 30px;
+    top: 100%;
+    margin-top: 70px;
+  }
+  .aparat-1 img,
+  .aparat-1 {
+    height: 150px;
+  }
+
+  /* Font sizes */
+  .dlaczego-left h3 {
+    font-size: 80px;
+  }
+  .dlaczego-left h4,
+  .banner-text h1 {
+    font-size: 45px;
+  }
+  .contact-title h2,
+  .title h2 {
+    font-size: 32px;
+  }
+  .banner-text p span {
+    font-size: 28px;
+  }
+  .hearing-text ul li span {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .hearing-text ul:before {
+    left: 20px;
+  }
+  .hearing-text ul li div {
+    width: calc(100% - 70px);
+  }
+  .banner-text p {
+    font-size: 24px;
+  }
+
+  .funding-title h3,
+  .nuances-right h3 {
+    font-size: 26px;
+  }
+  .co-text h5,
+  .contact-title p,
+  .nowoczesne-list ul li,
+  .nowoczesne-text p,
+  .dlaczego-text p,
+  .dlaczego-left p,
+  .nuances-right p,
+  .nuances-right li,
+  .content-text ul li,
+  .hearing-text ul h5,
+  .hearing-btm-text p,
+  .test-text p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1299px) {
+}
+
+@media (max-width: 1199px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  .banner-area {
+    position: relative;
+  }
+  .banner-area::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+  }
+  .banner {
+    position: relative;
+    z-index: 2;
+  }
+  .test-inner {
+    gap: 30px;
+  }
+  .test-card {
+    width: calc(33.33% - 20px);
+  }
+  .test-card:nth-child(3):before {
+    /* display: none; */
+  }
+  .test-area {
+    padding-bottom: 40px;
+  }
+
+  .hearing-test-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .dlaczego-right,
+  .hearing-test-left {
+    max-width: 100%;
+  }
+  .nuances-inner:after {
+    display: none;
+  }
+  .nowoczesne-inner,
+  .nuances-inner {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .nuances-right {
+    padding-left: 0;
+  }
+  .content-right {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .content-inner.row-revers {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .dlaczego-audika-area {
+    margin-top: 0;
+  }
+  .dlaczego-left {
+    max-width: 522px;
+    height: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nowoczesne-apparts {
+    left: -70px;
+    top: 60px;
+  }
+  .nowoczesne-inner {
+    gap: 30px;
+  }
+  .nowoczesne-left {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .nowoczesne-right {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .footer-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footer-area {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-area {
+    margin-top: 55px;
+  }
+  .dlaczego-left h4,
+  .banner-text h1 {
+    font-size: 42px;
+  }
+  .banner-text h1 {
+    max-width: 100%;
+  }
+  .banner {
+    height: 560px;
+    position: relative;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .banner-text {
+    top: -70px;
+  }
+  .aparat-1 img,
+  .aparat-1 {
+    height: 100px;
+  }
+  .aparat {
+    gap: 30px;
+    top: unset;
+    margin-top: 0;
+    bottom: -10px;
+  }
+  .nuances-right li {
+    width: calc(50% - 8px);
+  }
+  .nuances-right div {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .funding-inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .footer-right ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  .footer-right a {
+    white-space: nowrap;
+  }
+  .footer-right p,
+  .footer-right a {
+    font-size: 14px;
+  }
+  .hearing-test-right,
+  .content-left {
+    max-width: 100%;
+  }
+  .nowoczesne-right {
+    max-width: 500px;
+  }
+  .content-text ul {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-text br {
+    display: none;
+  }
+  .test-card {
+    width: calc(50% - 15px);
+  }
+  .test-card:nth-child(3):before {
+    display: block;
+  }
+  .banner-text p span {
+    font-size: 20px;
+  }
+  .banner-text p {
+    font-size: 18px;
+  }
+  .nowoczesne-right {
+    max-width: 360px;
+  }
+  .nowoczesne-apparts {
+    left: -44px;
+    top: 60px;
+    max-width: 170px;
+  }
+  .footer-right ul,
+  .footer-inner {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer-right p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .dlaczego-left h3 {
+    font-size: 55px;
+  }
+  .dlaczego-left h4,
+  .banner-text h1,
+  .title h2 {
+    font-size: 26px;
+  }
+  .dlaczego-left h4,
+  .banner-text h1 {
+    font-size: 32px;
+  }
+  .funding-title h3,
+  .nuances-right h3 {
+    font-size: 24px;
+  }
+  .contact-title h2 {
+    font-size: 20px;
+  }
+  .nuances-right h3 {
+    font-size: 20px;
+  }
+  .nuances-inner:before {
+    font-size: 43vw;
+  }
+  .nuances-right h3 br {
+    display: none;
+  }
+  .aparat {
+    right: 15px;
+  }
+  .test-card {
+    width: 100%;
+  }
+  .test-card::before {
+    display: none !important;
+  }
+  .test-text p {
+    margin-bottom: 0;
+  }
+  .aparat {
+    gap: 15px;
+  }
+  .aparat-1 img,
+  .aparat-1 {
+    height: 80px;
+  }
+  .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    max-width: 350px;
+    gap: 5px;
+  }
+  .btn img {
+    max-width: 40px;
+  }
+  .funding-inner div {
+    width: 100%;
+    max-width: 350px;
+  }
+  .nuances-right li {
+    width: 100%;
+  }
+  .dlaczego-left:before {
+    width: 100%;
+    height: 515px;
+    left: 0;
+  }
+  .dlaczego-card {
+    width: 100%;
+  }
+  .dlaczego-audika-area {
+    padding: 60px 0;
+  }
+  .nowoczesne-text div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .contact-form .col {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .contact-form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 499px) {
+  .nowoczesne-right {
+    max-width: 100%;
+    padding-left: 40px;
+  }
+  .nowoczesne-apparts {
+    left: 0;
+    top: 50px;
+    max-width: 43%;
+  }
+}

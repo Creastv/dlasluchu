@@ -1,0 +1,136 @@
+/*===========================================================
+ Common CSS
+============================================================*/
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 0.875rem;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  color: var(--black);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li,
+li:hover,
+a:hover,
+.btn,
+.btn:hover {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+*:active,
+*:focus {
+  outline: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+strong {
+  font-weight: 700;
+}
+
+u {
+  border-bottom: 0.0625rem solid var(--white);
+  line-height: 1;
+  text-decoration: unset;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button:active,
+button:focus {
+  outline: 0;
+  outline: 0;
+}
+
+.entry-content {
+  .container-narrow {
+    @media #{$sm} {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
+#main {
+  position: relative;
+  z-index: 99;
+  // margin: 50px 0;
+}
+
+.go-pagination {
+  width: 100%;
+  padding: 20px 0;
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  a {
+    padding: 5px 1px;
+    text-decoration: none;
+    &:hover {
+      color: var(--main2);
+    }
+  }
+  span.current {
+    background-color: var(--main2);
+    color: var(--white);
+    padding: 5px 5px;
+    border-radius: 3px;
+  }
+}
+
+.rank-math-breadcrumb {
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.8em;
+    @media #{$sm} {
+      gap: 5px;
+    }
+
+    span {
+      &:last-child {
+        color: var(--black);
+        font-size: 1em;
+        display: inline-block;
+        max-width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-overflow: "----";
+        text-align: left;
+      }
+    }
+  }
+}

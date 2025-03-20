@@ -1,0 +1,70 @@
+.hearing-test-left .title,
+.test-area .title {
+  background-image: url("../img/title-bg-big.png");
+  background-position: 0 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
+.title {
+  background-image: url("../img/title-bg-sm.png");
+
+  display: inline-block;
+  background-repeat: repeat-x;
+  /* padding-right: 5rem; */
+  padding-top: 1.875rem;
+
+  background-position: left bottom;
+}
+.title .line-right {
+  width: 3.125rem;
+  display: inline-block;
+  height: 0.0625rem;
+  background: var(--blue);
+  margin-left: 1.875rem;
+}
+.title p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--blue);
+  margin: 0;
+  padding-left: 5rem;
+  margin-bottom: 0.625rem;
+  position: relative;
+}
+.title p:before {
+  position: absolute;
+  content: "";
+  width: 6.25rem;
+  height: 0.0625rem;
+  background-color: var(--blue);
+  left: -2.8125rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.title h2 {
+  font-size: 2.5625rem;
+  font-weight: 900;
+  line-height: 1.18;
+  color: var(--black);
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+}
+/* .title h2:before {
+    position: absolute;
+    content: "";
+    width: 3.125rem;
+    height: .0625rem;
+    background-color: var(--blue);
+    right: -4.375rem;
+    bottom: .75rem;
+} */
+.title h2 span {
+  color: var(--blue);
+}
+
+.h-spacer {
+  height: 100px;
+}
