@@ -89,7 +89,7 @@ Common Classes
   font-size: 1rem;
   font-weight: 600;
   color: var(--white);
-  line-height: normal;
+  line-height: 3.4375rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -116,7 +116,7 @@ Common Classes
   box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.05);
   border: solid 0.0625rem var(--blue);
   background-color: var(--white);
-  line-height: normal;
+  line-height: 3rem;
   padding: 0 2rem;
 }
 .btn-check:focus + .btn,

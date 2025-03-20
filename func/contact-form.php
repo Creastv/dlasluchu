@@ -73,7 +73,7 @@ function handle_lead_submission()
 
     error_log("✅ Lead zapisany do bazy!");
 
-    $to = "twoj_email@example.com";
+    $to = "piotr@roial.pl";
     $subject = "Nowe zgłoszenie z formularza";
     $message = "Nowe zgłoszenie:\n\n" .
         "Imię i nazwisko: $name\n" .
