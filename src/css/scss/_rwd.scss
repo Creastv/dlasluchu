@@ -197,16 +197,17 @@ Responsive
   .nuances-right {
     padding-left: 0;
   }
-  .content-right {
-    padding-left: 0;
-    max-width: 100%;
-  }
-  .content-inner.row-revers {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
+  // .content-right {
+  //   padding-left: 0;
+  //   max-width: 100%;
+  //   width: 100%;
+  // }
+  // .content-inner.row-revers {
+  //   -webkit-box-orient: horizontal;
+  //   -webkit-box-direction: normal;
+  //   -ms-flex-direction: row;
+  //   flex-direction: row;
+  // }
   .dlaczego-audika-area {
     margin-top: 0;
   }
@@ -308,12 +309,18 @@ Responsive
   .hearing-test-right,
   .content-left {
     max-width: 100%;
+    width: 100%;
   }
   .nowoczesne-right {
     max-width: 500px;
   }
   .content-text ul {
     padding-right: 0;
+  }
+  .content-right {
+    padding-left: 0;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -420,10 +427,15 @@ Responsive
   .nuances-right li {
     width: 100%;
   }
+  .dlaczego-left {
+    height: initial;
+    margin-bottom: 30px;
+  }
   .dlaczego-left:before {
     width: 100%;
-    height: 515px;
+    height: initial;
     left: 0;
+    display: none;
   }
   .dlaczego-card {
     width: 100%;

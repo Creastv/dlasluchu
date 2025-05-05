@@ -32,11 +32,11 @@ $bLink = get_theme_mod('header_button_link', '');
     echo $temp_menu;
     ?>
     <?php if ($bText || $bLink) : ?>
-    <div>
-        <a class="btn btn-border hvr-wobble smooth-scroll" href="<?php echo $bLink; ?>">
-            <span><?php echo $bText; ?></span>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/arrow-right.svg" alt="arrow-right">
-        </a>
-    </div>
+        <div class="menu-item">
+            <a class="btn btn-border hvr-wobble smooth-scroll" href="<?php echo $bLink; ?>">
+                <span><?php echo $bText; ?></span>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/arrow-right.svg" alt="arrow-right">
+            </a>
+        </div>
     <?php endif; ?>
 </div>
