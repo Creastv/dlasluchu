@@ -27,6 +27,10 @@ body {
   color: var(--black);
 }
 
+.single .entry-header:before {
+  width: 100%;
+}
+
 .entry-header {
   position: relative;
   padding: 150px 0 50px;

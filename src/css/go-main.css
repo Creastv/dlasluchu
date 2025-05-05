@@ -27,6 +27,10 @@ body {
   color: var(--black);
 }
 
+.single .entry-header:before {
+  width: 100%;
+}
+
 .entry-header {
   position: relative;
   padding: 150px 0 50px;
@@ -1731,8 +1735,10 @@ Footer Area
 
 .footer-right ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
-  gap: 1.25rem;
+  gap: 0 1.25rem;
   position: relative;
   padding-bottom: 1.5625rem;
   margin-bottom: 1.25rem;

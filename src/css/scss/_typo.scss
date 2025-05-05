@@ -6,6 +6,13 @@ body {
   line-height: 1.2;
   color: var(--black);
 }
+.single {
+  .entry-header {
+    &:before {
+      width: 100%;
+    }
+  }
+}
 .entry-header {
   position: relative;
   padding: 150px 0 50px;

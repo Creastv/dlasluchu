@@ -24,9 +24,9 @@
     </script> -->
 </head>
 
-<!-- <body <?php body_class(); ?>> -->
+<body <?php body_class(); ?>>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="90" class="scrollspy-example"
+    <!-- <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="90" class="scrollspy-example" -->
     tabindex="0">
     <header id="header" class="js-header" itemscope itemtype="http://schema.org/WPHeader">
         <nav class="navbar navbar-expand-xl">
