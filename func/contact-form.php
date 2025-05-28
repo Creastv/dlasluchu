@@ -41,7 +41,8 @@ function handle_lead_submission()
 
     global $wpdb;
     $table_name = 'dlaud_leads';
-
+    $data_wyslania = current_time('Y-m-d H:i:s');
+    $referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'Nieznany';
     $name = isset($_POST['nm']) ? sanitize_text_field($_POST['nm']) : '';
     $email = isset($_POST['em']) ? sanitize_email($_POST['em']) : '';
     $phone = isset($_POST['pe']) ? sanitize_text_field($_POST['pe']) : '';
@@ -84,6 +85,8 @@ function handle_lead_submission()
         "Zgoda 2: " . ($consent_2 ? "Tak" : "Nie");
     "Źródło UTM:\n" .
         "UTM Source: $utm_source";
+    "Wysłano z: $referer";
+    "Data i godzina wysłania: $data_wyslania";
 
     $headers = ["Content-Type: text/plain; charset=UTF-8"];
 
