@@ -74,16 +74,15 @@ function handle_lead_submission()
 
     error_log("✅ Lead zapisany do bazy!");
 
-    $to = ["piotr@roial.pl", "creastv@gmail.com"];
+    $to = ["piotr@roial.pl", "creastv@gmail.com", 'tomek@roial.pl'];
     $subject = "Nowe zgłoszenie z formularza";
     $message = "Nowe zgłoszenie:\n\n" .
         "Imię i nazwisko: $name\n" .
         "E-mail: $email\n" .
         "Telefon: $phone\n" .
         "Miasto: $city\n" .
-        "Zgoda 1000: " . ($consent_1 ? "Tak" : "Nie") . "\n" .
-        "Zgoda 2: " . ($consent_2 ? "Tak" : "Nie") . "\n" .
-        "Źródło UTM:\n" .
+        "Wyrażam zgodę na kontakt telefoniczny: " . ($consent_1 ? "Tak" : "Nie") . "\n" .
+        "Wyrażam zgodę na kontakt drogą mailową: " . ($consent_2 ? "Tak" : "Nie") . "\n" .
         "UTM Source: $utm_source\n" .
         "Wysłano z: $referer\n" .
         "Data i godzina wysłania: $data_wyslania";
