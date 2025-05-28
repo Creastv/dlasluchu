@@ -82,11 +82,11 @@ function handle_lead_submission()
         "Telefon: $phone\n" .
         "Miasto: $city\n" .
         "Zgoda 1000: " . ($consent_1 ? "Tak" : "Nie") . "\n" .
-        "Zgoda 2: " . ($consent_2 ? "Tak" : "Nie");
-    "Źródło UTM:\n" .
-        "UTM Source: $utm_source";
-    "Wysłano z: $referer";
-    "Data i godzina wysłania: $data_wyslania";
+        "Zgoda 2: " . ($consent_2 ? "Tak" : "Nie") . "\n" .
+        "Źródło UTM:\n" .
+        "UTM Source: $utm_source\n" .
+        "Wysłano z: $referer\n" .
+        "Data i godzina wysłania: $data_wyslania";
 
     $headers = ["Content-Type: text/plain; charset=UTF-8"];
 
