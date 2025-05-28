@@ -87,7 +87,7 @@ function handle_lead_submission()
         "Wysłano z: $referer\n" .
         "Data i godzina wysłania: $data_wyslania";
 
-    $headers = ["Content-Type: text/plain; charset=UTF-8"];
+    $headers = ["Content-Type: text/plain; charset=UTF-8", 'From: Dla Słuchu Formularz <marketing@dlasluchu.pl>'];
 
     if (!wp_mail($to, $subject, $message, $headers)) {
         error_log("❌ Błąd wysyłania maila.");
