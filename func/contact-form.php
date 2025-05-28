@@ -81,7 +81,7 @@ function handle_lead_submission()
         "E-mail: $email\n" .
         "Telefon: $phone\n" .
         "Miasto: $city\n" .
-        "Zgoda 1: " . ($consent_1 ? "Tak" : "Nie") . "\n" .
+        "Zgoda 1000: " . ($consent_1 ? "Tak" : "Nie") . "\n" .
         "Zgoda 2: " . ($consent_2 ? "Tak" : "Nie");
     "Źródło UTM:\n" .
         "UTM Source: $utm_source";
